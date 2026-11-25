@@ -1,0 +1,18 @@
+#include<stdio.h>
+int fact();
+int main()
+{
+    int num,result;
+    printf("Enter the number for it's factorial\t");
+    scanf("%d",&num);
+    result=fact(num);
+    printf("Result: %d\t",result);
+}
+
+int fact(int n)
+{
+    if(n==1)
+    return 1;
+    else
+    return n*fact(n-1);
+}
